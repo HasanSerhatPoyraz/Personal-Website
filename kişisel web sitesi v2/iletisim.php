@@ -18,18 +18,30 @@ echo "E-mail: <b>". $email."</b><br><br> ";
 echo "Cinsiyet:".$cinsiyet."<br><br>" ;
     
     
-     $sebep = $_POST['sebep'];
- 
-  if (count($sebep) > 0)
-  {
-      echo "İletişim Sebepleri:<br>";
-     foreach ($sebep as $secilen_sebep)
-     {
-    echo $secilen_sebep."<br>";
-     }
-  }
-    
    
+    
+    
+
+    if(isset($_POST['sebep'])) 
+    {
+        $sebep = $_POST['sebep'];
+ 
+        echo 'İletişim sebepleri: <br/>';
+ 
+        foreach($sebep as $secilen_sebep)
+        {
+            echo  $secilen_sebep . ' <br/>';
+        }
+    } 
+    
+    else 
+    {
+    echo 'Hiç sebep seçmediniz.';
+    }
+    
+    
+    
+    
     
     echo "<br>Mesaj:";
  echo htmlentities($_POST['mesaj']);

@@ -15,44 +15,7 @@
   </head>
   <body>
       
-      <!-- Navbar  -->
-      
-       <nav class="navbar navbar-expand-sm  navbar-dark bg-dark ">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu" >
-            <ul class="navbar-nav">
-                
-                <li class="nav-item active">
-                    <a href="1.sayfa.html" class="nav-link" >Anasayfa</a>
-                </li>
-                
-                <li class="nav-item active">
-                    <a href="2.sayfa.html" class="nav-link"> Şehrim</a>
-                </li>
-              
-                <li class="nav-item active">
-                    <a href="3.sayfa.html" class="nav-link" >Takım</a>
-                </li>
-                
-                 <li class="nav-item active">
-                    <a href="4.sayfa.html" class="nav-link" >Özgeçmiş</a>
-                </li>
-                
-                     
-                <li class="nav-item active">
-                    <a href="iletisim.html" class="nav-link" >İletişim</a>
-                </li>
-                
-                 <li class="nav-item active">
-                    <a href="girisekrani.html" class="nav-link" >Giriş</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-      
+     
       
       
       
@@ -65,18 +28,21 @@
          
        
 		<li>ADINIZ</li>
-         <li class="bosluk"> <input type="text" name="ad"><br></li>
+         <li class="bosluk"> <input type="text" name="ad" required><br></li>
 		
 
          <li>E-mail</li>
          
-         <li class="bosluk"><input type="email" name="email"><br></li>
+         <li class="bosluk"><input type="email" name="email" required><br></li>
 		
        
          
-         <li class="bosluk">  Cinsiyetiniz:&emsp;Erkek<input type="radio" name="radio" value="erkek">
+         <li class="bosluk">  Cinsiyetiniz:&emsp;Erkek<input type="radio" name="radio" value="erkek" checked>
 		Kadın<input type="radio" name="radio" value="kadın"></li>
 
+         
+         
+         
          <li class="bosluk">İletişime geçme sebebiniz:</li>
 	<li class="bosluk">Proje ile ilgili detaylı bilgi almak:<input type="checkbox" name="sebep[]" value="Proje ile ilgili detaylı bilgi almak" proje_bilgi></li>
          
@@ -84,15 +50,23 @@
          
 	<li class="bosluk">Kişisel web sitesi tasarlatmak:<input type="checkbox" name="sebep[]" value="Kişisel web sitesi tasarlatmak"tasarım_bilgi><br></li>
 	
+         
+         
 	
 		
           
-		<li>Mesajınız:<textarea name="mesaj" rows="5" cols="40"> 
+		<li>Mesajınız:<textarea name="mesaj" rows="5" cols="40"  required> 
 </textarea><br></li>
 
 
 
-         <li><input type="submit" class="button"value="Gonder"></li>
+         <li><input type="submit" class="button"value="Gonder">
+    <a href="iletisim.html" ><input type="reset" class="button" value="Temizle"></a>
+    <a href="1.sayfa.html" ><input type="button" class="button" value="Anasayfa"></a></li>
+
+
+
+
     
     
     </ul>
